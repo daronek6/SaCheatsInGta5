@@ -9,7 +9,7 @@ namespace SaCheats
         private Model vortex;
 
         public IWantToHover()
-          : base(CheatType.Instant, "IWantToHover", "Spawn Vortex Hovercraft")
+          : base(CheatType.NotSupported, "IWantToHover", "Spawn Vortex Hovercraft")
         {
             this.vortex = new Model(VehicleHash.Vortex);
         }

@@ -6,48 +6,38 @@ namespace SaCheats
     internal class WheelsOnlyPlease : Cheat
     {
         public WheelsOnlyPlease()
-          : base(CheatType.Active, "WheelsOnlyPlease", "Invisible Car (Only Wheels Visible)")
+          : base(CheatType.Active, "WheelsOnlyPlease", "Invisible Cars")
         {
         }
 
         public override void CheatActive(object o, EventArgs e)
         {
-            foreach (Vehicle allVehicle in World.GetAllVehicles())
+            foreach (Vehicle vehicle in World.GetAllVehicles())
             {
-                Model model = ((Entity)allVehicle).Model;
-                int num;
-                if (!model.IsBicycle)
+                if (vehicle.Model.IsCar)
                 {
-                    model = ((Entity)allVehicle).Model;
-                    if (!model.IsCar)
-                    {
-                        model = ((Entity)allVehicle).Model;
-                        num = model.IsBike ? 1 : 0;
-                        if (num != 0)
-                            ((Entity)allVehicle).IsVisible = false;
-                    }
+                    vehicle.IsVisible = false;
                 }
+            }
+
+            if(!Game.Player.Character.IsInVehicle())
+            {
+                Game.Player.Character.IsVisible = true;
             }
         }
 
         public override void Toggle()
         {
             base.Toggle();
-            if (this.Toggled)
-                return;
-            foreach (Vehicle allVehicle in World.GetAllVehicles())
+
+            if(!Toggled)
             {
-                Model model = ((Entity)allVehicle).Model;
-                int num;
-                if (!model.IsBicycle)
+                foreach (Vehicle vehicle in World.GetAllVehicles())
                 {
-                    model = ((Entity)allVehicle).Model;
-                    if (!model.IsCar)
+                    if (vehicle.Model.IsCar)
                     {
-                        model = ((Entity)allVehicle).Model;
-                        num = model.IsBike ? 1 : 0;
-                        if (num != 0)
-                            ((Entity)allVehicle).IsVisible = true;
+                        vehicle.IsVisible = true;
+                        Game.Player.Character.IsVisible = true;
                     }
                 }
             }

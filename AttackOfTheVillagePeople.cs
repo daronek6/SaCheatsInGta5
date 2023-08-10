@@ -27,7 +27,7 @@ namespace SaCheats
             this.frame = Util.nanoTime();
             if (frame - prevFrame < 3000000000L)
                 return;
-            foreach (Ped nearbyPed in World.GetNearbyPeds(((Entity)Game.Player.Character).Position, 80f))
+            foreach (Ped nearbyPed in World.GetNearbyPeds((Game.Player.Character).Position, 120f))
             {
                 if (!nearbyPed.IsPlayer)
                 {
