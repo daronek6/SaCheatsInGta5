@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\daronek\Downloads\603dcf-GtaSaCheats1.1\GtaSaCheats\scripts\SaCheats.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74B9C797-7780-4543-863A-C5512AD0E1CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>SaCheats</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>SaCheats</RootNamespace>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ScriptHookVDotNet3">
+      <HintPath>D:\SteamLibrary\steamapps\common\Grand Theft Auto V\ScriptHookVDotNet3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheatActivatedUI.cs" />
+    <Compile Include="CheatDescription.cs" />
+    <Compile Include="CheatLists.cs" />
+    <Compile Include="CheatListUI.cs" />
+    <Compile Include="CheatMenuUI.cs" />
+    <Compile Include="CheatMenuUIState.cs" />
+    <Compile Include="DescriptionUI.cs" />
+    <Compile Include="IDoAsIPlease.cs" />
+    <Compile Include="LetsGoBaseJumping.cs" />
+    <Compile Include="MainMenuUI.cs" />
+    <Compile Include="RoughNeighbourhood.cs" />
+    <Compile Include="DullDullDay.cs" />
+    <Compile Include="HitTheRoadJack.cs" />
+    <Compile Include="SmallStepForMan.cs" />
+    <Compile Include="ModSoundPlayer.cs" />
+    <Compile Include="StingLikeABee.cs" />
+    <Compile Include="TakeAChillPill.cs" />
+    <Compile Include="StayInAndWatchTV.cs" />
+    <Compile Include="StopPickingOnMe.cs" />
+    <Compile Include="NoOneCanHurtMe.cs" />
+    <Compile Include="LoveConquersAll.cs" />
+    <Compile Include="AttackOfTheVillagePeople.cs" />
+    <Compile Include="BetterStayIndoors.cs" />
+    <Compile Include="BlueSuedeShoes.cs" />
+    <Compile Include="NoOneCanStopUs.cs" />
+    <Compile Include="BringItOn.cs" />
+    <Compile Include="UIElement.cs" />
+    <Compile Include="WhoAteAllThePies.cs" />
+    <Compile Include="BubbleCars.cs" />
+    <Compile Include="BuffMeUp.cs" />
+    <Compile Include="CelebrityStatus.cs" />
+    <Compile Include="CantSeeWhereImGoing.cs" />
+    <Compile Include="Cheat.cs" />
+    <Compile Include="CheatCodeChecker.cs" />
+    <Compile Include="CheatCodeHashes.cs" />
+    <Compile Include="CheatType.cs" />
+    <Compile Include="ChittyChittyBangBang.cs" />
+    <Compile Include="CJPhoneHome.cs" />
+    <Compile Include="SandInMyEars.cs" />
+    <Compile Include="FlyingToStunt.cs" />
+    <Compile Include="FourWheelFun.cs" />
+    <Compile Include="HashingAlgorithm.cs" />
+    <Compile Include="ItsAllBull.cs" />
+    <Compile Include="JumpJet.cs" />
+    <Compile Include="IWantToHover.cs" />
+    <Compile Include="MonsterMash.cs" />
+    <Compile Include="NightProwler.cs" />
+    <Compile Include="DontBringOnTheNight.cs" />
+    <Compile Include="OhDude.cs" />
+    <Compile Include="PleasantlyWarm.cs" />
+    <Compile Include="_18Holes.cs" />
+    <Compile Include="ScottishSummer.cs" />
+    <Compile Include="TooDamnHot.cs" />
+    <Compile Include="TrueGrime.cs" />
+    <Compile Include="JustTryAndStopMe.cs" />
+    <Compile Include="WheresTheFuneral.cs" />
+    <Compile Include="AllCarsGoBoom.cs" />
+    <Compile Include="Crazytown.cs" />
+    <Compile Include="ManFromAtlantis.cs" />
+    <Compile Include="EveryoneIsPoor.cs" />
+    <Compile Include="EveryoneIsRich.cs" />
+    <Compile Include="FlyingFish.cs" />
+    <Compile Include="SurroundedByNutters.cs" />
+    <Compile Include="FullClip.cs" />
+    <Compile Include="HicksVille.cs" />
+    <Compile Include="GhostTown.cs" />
+    <Compile Include="GoodbyeCruelWorld.cs" />
+    <Compile Include="HelloLadies.cs" />
+    <Compile Include="INeedSomeHelp.cs" />
+    <Compile Include="SoLongAsItsBlack.cs" />
+    <Compile Include="TimeToKickAss.cs" />
+    <Compile Include="TouchMyCarYouDie.cs" />
+    <Compile Include="DoughnutHandicap.cs" />
+    <Compile Include="Kangaroo.cs" />
+    <Compile Include="LeanAndMean.cs" />
+    <Compile Include="LifesABeach.cs" />
+    <Compile Include="PinkIsTheNewCool.cs" />
+    <Compile Include="ThugsArmoury.cs" />
+    <Compile Include="NaturalTalent.cs" />
+    <Compile Include="NinjaTown.cs" />
+    <Compile Include="OldSpeedDemon.cs" />
+    <Compile Include="OnlyHomiesAllowed.cs" />
+    <Compile Include="IWannaDriveBy.cs" />
+    <Compile Include="ProfessionalKiller.cs" />
+    <Compile Include="ProfessionalsKit.cs" />
+    <Compile Include="Rocketman.cs" />
+    <Compile Include="RocketMayhem.cs" />
+    <Compile Include="SaCheatsScript.cs" />
+    <Compile Include="CheatCodes.cs" />
+    <Compile Include="WannaBeInMyGang.cs" />
+    <Compile Include="SlowItDown.cs" />
+    <Compile Include="SpeedFreak.cs" />
+    <Compile Include="SpeedItUp.cs" />
+    <Compile Include="StateOfEmergency.cs" />
+    <Compile Include="StickLikeGlue.cs" />
+    <Compile Include="TurnDownTheHeat.cs" />
+    <Compile Include="TurnUpTheHeat.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="NuttersToys.cs" />
+    <Compile Include="ICanGoAllNight.cs" />
+    <Compile Include="NotForPublicRoads.cs" />
+    <Compile Include="WheelsOnlyPlease.cs" />
+    <Compile Include="Worshipme.cs" />
+    <Compile Include="AllDriversAreCriminals.cs" />
+    <Compile Include="TimeJustFliesBy.cs" />
+    <Compile Include="DontTryAndStopMe.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
